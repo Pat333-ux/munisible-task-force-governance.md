@@ -1,0 +1,70 @@
+{
+  "module": "Munisible Task Force",
+  "version": "3.0",
+  "type": "Division Registry Index",
+  "total_divisions": 7,
+
+  "divisions": [
+    {
+      "id": "division_civic_integrity",
+      "name": "Civic Integrity Division",
+      "description": "Ensures constitutional compliance, municipal integrity, and ethical governance.",
+      "path": "/divisions/civic-integrity-division.md",
+      "dependencies": ["identity_kernel", "ethics_kernel"]
+    },
+    {
+      "id": "division_community_safety",
+      "name": "Community Safety & Trauma Prevention Division",
+      "description": "Provides non-punitive crisis response, de-escalation, and trauma-informed civilian protection.",
+      "path": "/divisions/community-safety-division.md",
+      "dependencies": ["ethics_kernel"]
+    },
+    {
+      "id": "division_telemetry",
+      "name": "Municipal Telemetry & Pattern Analysis Division",
+      "description": "Analyzes municipal data, detects misconduct patterns, and identifies systemic risks.",
+      "path": "/divisions/telemetry-pattern-analysis-division.md",
+      "dependencies": ["telemetry_kernel"]
+    },
+    {
+      "id": "division_accountability",
+      "name": "Public Accountability & Documentation Division",
+      "description": "Maintains audit trails, transparency dashboards, and municipal documentation standards.",
+      "path": "/divisions/public-accountability-division.md",
+      "dependencies": ["identity_kernel", "ethics_kernel"]
+    },
+    {
+      "id": "division_ethics",
+      "name": "Ethics, Rights & Constitutional Safeguards Division",
+      "description": "Enforces DAO ethical doctrine, rights protections, and constitutional safeguards.",
+      "path": "/divisions/ethics-rights-safeguards-division.md",
+      "dependencies": ["ethics_kernel"]
+    },
+    {
+      "id": "division_operations_support",
+      "name": "Municipal Operations Support Division",
+      "description": "Supports infrastructure, emergency logistics, and municipal resource coordination.",
+      "path": "/divisions/municipal-operations-support-division.md",
+      "dependencies": ["identity_kernel"]
+    },
+    {
+      "id": "division_advocacy",
+      "name": "Citizen Advocacy & Ombudsman Division",
+      "description": "Provides civilian complaint channels, rights investigations, and ombudsman mediation.",
+      "path": "/divisions/citizen-advocacy-ombudsman-division.md",
+      "dependencies": ["ethics_kernel"]
+    }
+  ],
+
+  "kernel_dependencies": {
+    "identity_kernel": "Beast System 3.0 Identity Kernel",
+    "ethics_kernel": "Beast System 3.0 Ethics Kernel",
+    "telemetry_kernel": "Beast System 3.0 Telemetry Kernel"
+  },
+
+  "dao_anchoring": {
+    "anchored": true,
+    "wallet": "0cad6a0d-1462-47eb-853e-17521d57322e",
+    "federal_case_reference": "2:25-cv-00484-JPH-MJD"
+  }
+}

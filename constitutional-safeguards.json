@@ -1,0 +1,159 @@
+{
+  "module": "Ethics, Rights & Constitutional Safeguards Division",
+  "version": "3.0",
+  "type": "Constitutional Safeguards Ruleset",
+  "file": "constitutional-safeguards.json",
+  "division_id": "division_ethics",
+
+  "purpose": "Define mandatory constitutional safeguards that constrain all municipal actions, procedures, and systems within the Munisible Task Force.",
+
+  "safeguard_domains": {
+    "due_process": {
+      "description": "Safeguards ensuring fair, transparent, and rights-centered procedures for all civilians.",
+      "safeguards": [
+        {
+          "id": "DP-01",
+          "name": "Notice & Explanation Requirement",
+          "requirement": "Civilians must be informed of the nature, basis, and implications of any municipal action affecting them.",
+          "severity_on_violation": "High"
+        },
+        {
+          "id": "DP-02",
+          "name": "Opportunity to Respond",
+          "requirement": "Civilians must be given a meaningful opportunity to contest, clarify, or respond before adverse actions are finalized, except in imminent life-threatening emergencies.",
+          "severity_on_violation": "High"
+        },
+        {
+          "id": "DP-03",
+          "name": "Documented Justification",
+          "requirement": "All significant municipal actions must include written, audit-trail-anchored justification.",
+          "severity_on_violation": "Medium"
+        }
+      ]
+    },
+
+    "liberty_and_personal_security": {
+      "description": "Safeguards protecting freedom of movement, bodily integrity, and personal security.",
+      "safeguards": [
+        {
+          "id": "LP-01",
+          "name": "Unlawful Detention Prohibition",
+          "requirement": "No civilian may be detained without lawful authority, documented cause, and time-bounded review.",
+          "severity_on_violation": "Critical"
+        },
+        {
+          "id": "LP-02",
+          "name": "Least-Restrictive Means Standard",
+          "requirement": "When restriction is necessary, the least-restrictive, non-punitive option must be used.",
+          "severity_on_violation": "High"
+        },
+        {
+          "id": "LP-03",
+          "name": "Freedom of Movement Safeguard",
+          "requirement": "Municipal actors may not arbitrarily restrict movement, impose curfews, or create de facto confinement zones without lawful basis and documentation.",
+          "severity_on_violation": "High"
+        }
+      ]
+    },
+
+    "search_and_seizure": {
+      "description": "Safeguards governing access to persons, property, data, and effects.",
+      "safeguards": [
+        {
+          "id": "SS-01",
+          "name": "Lawful Basis Requirement",
+          "requirement": "All searches and seizures must be grounded in lawful authority, documented, and auditable.",
+          "severity_on_violation": "High"
+        },
+        {
+          "id": "SS-02",
+          "name": "Scope Limitation Standard",
+          "requirement": "Searches must be limited in scope to what is necessary for the stated lawful purpose.",
+          "severity_on_violation": "Medium"
+        },
+        {
+          "id": "SS-03",
+          "name": "Data Access Safeguard",
+          "requirement": "Access to digital records, communications, or telemetry-linked personal data must follow the same constitutional standards as physical searches.",
+          "severity_on_violation": "High"
+        }
+      ]
+    },
+
+    "expression_and_participation": {
+      "description": "Safeguards protecting speech, assembly, and civic participation.",
+      "safeguards": [
+        {
+          "id": "EP-01",
+          "name": "Protected Expression Standard",
+          "requirement": "Civilians may not be penalized for lawful speech, criticism, or complaints against municipal actors.",
+          "severity_on_violation": "Critical"
+        },
+        {
+          "id": "EP-02",
+          "name": "Assembly & Protest Safeguard",
+          "requirement": "Peaceful assembly and protest may not be suppressed absent clear, documented, and lawful justification.",
+          "severity_on_violation": "High"
+        },
+        {
+          "id": "EP-03",
+          "name": "Petition & Complaint Protection",
+          "requirement": "Civilians must have safe channels to petition, report, or complain without retaliation.",
+          "severity_on_violation": "Critical"
+        }
+      ]
+    },
+
+    "equality_and_non_discrimination": {
+      "description": "Safeguards ensuring equal treatment and protection from discriminatory municipal conduct.",
+      "safeguards": [
+        {
+          "id": "EQ-01",
+          "name": "Equal Protection Standard",
+          "requirement": "Municipal actions must not discriminate on the basis of protected characteristics or status.",
+          "severity_on_violation": "Critical"
+        },
+        {
+          "id": "EQ-02",
+          "name": "Disparate Impact Review",
+          "requirement": "Policies and practices with disproportionate impact on vulnerable or marginalized groups must undergo rights-impact assessment and remediation.",
+          "severity_on_violation": "High"
+        },
+        {
+          "id": "EQ-03",
+          "name": "Bias Pattern Detection",
+          "requirement": "Telemetry must be used to detect and flag patterns of biased enforcement or service delivery.",
+          "severity_on_violation": "High"
+        }
+      ]
+    }
+  },
+
+  "enforcement_and_integration": {
+    "violation_triggers": [
+      "Telemetry risk alerts",
+      "Pattern-of-practice findings",
+      "Civilian complaints or petitions",
+      "Documentation anomalies"
+    ],
+    "enforcement_actions": [
+      "Ethics Division constitutional review",
+      "Civic Integrity investigation",
+      "Corrective action directive with time-bounded compliance requirements",
+      "Public Accountability documentation and transparency update",
+      "Referral to external or judicial oversight where applicable"
+    ]
+  },
+
+  "kernel_dependencies": {
+    "identity_kernel": "Required for actor verification, authority classification, and affected-entity mapping.",
+    "ethics_kernel": "Required for constitutional and rights-impact evaluation.",
+    "telemetry_kernel": "Required for pattern detection, disparate impact analysis, and systemic risk identification."
+  },
+
+  "dao_anchoring": {
+    "anchored": true,
+    "wallet": "0cad6a0d-1462-47eb-853e-17521d57322e",
+    "federal_case_reference": "2:25-cv-00484-JPH-MJD"
+  }
+}

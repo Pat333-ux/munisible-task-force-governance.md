@@ -1,0 +1,159 @@
+{
+  "module": "Ethics, Rights & Constitutional Safeguards Division",
+  "version": "3.0",
+  "type": "Ethical Rights & Safeguards Ruleset",
+  "file": "ethics-rights-safeguards.json",
+  "division_id": "division_ethics",
+
+  "purpose": "Define mandatory ethical standards, rights protections, and constitutional safeguards for all municipal actors and systems within the Munisible Task Force.",
+
+  "safeguard_categories": {
+    "constitutional_protections": {
+      "description": "Safeguards ensuring all municipal actions comply with constitutional rights.",
+      "safeguards": [
+        {
+          "id": "CP-01",
+          "name": "Due Process Guarantee",
+          "requirement": "All civilians must receive fair, transparent, and rights-centered procedures.",
+          "severity_on_violation": "Critical"
+        },
+        {
+          "id": "CP-02",
+          "name": "Unlawful Detention Prohibition",
+          "requirement": "No civilian may be detained without lawful authority and documented justification.",
+          "severity_on_violation": "Critical"
+        },
+        {
+          "id": "CP-03",
+          "name": "Search & Seizure Safeguard",
+          "requirement": "All searches must follow constitutional standards and be fully documented.",
+          "severity_on_violation": "High"
+        }
+      ]
+    },
+
+    "ethical_conduct_standards": {
+      "description": "Defines ethical behavior requirements for all municipal actors.",
+      "safeguards": [
+        {
+          "id": "EC-01",
+          "name": "Respect & Dignity Mandate",
+          "requirement": "All civilians must be treated with inherent dignity regardless of circumstance.",
+          "severity_on_violation": "High"
+        },
+        {
+          "id": "EC-02",
+          "name": "Non-Coercion Rule",
+          "requirement": "Coercive tactics are prohibited except in life-threatening emergencies.",
+          "severity_on_violation": "High"
+        },
+        {
+          "id": "EC-03",
+          "name": "Anti-Retaliation Standard",
+          "requirement": "No municipal actor may retaliate against civilians for complaints or reports.",
+          "severity_on_violation": "Critical"
+        }
+      ]
+    },
+
+    "rights_impact_prevention": {
+      "description": "Safeguards preventing municipal actions that may harm civilian rights.",
+      "safeguards": [
+        {
+          "id": "RI-01",
+          "name": "Rights Impact Assessment",
+          "requirement": "All high-risk actions must undergo rights-impact evaluation.",
+          "severity_on_violation": "High"
+        },
+        {
+          "id": "RI-02",
+          "name": "Disproportionate Impact Prevention",
+          "requirement": "Actions must not disproportionately affect vulnerable populations.",
+          "severity_on_violation": "High"
+        },
+        {
+          "id": "RI-03",
+          "name": "Civilian Autonomy Protection",
+          "requirement": "Civilians must be given choices whenever possible to preserve autonomy.",
+          "severity_on_violation": "Medium"
+        }
+      ]
+    },
+
+    "trauma_prevention_safeguards": {
+      "description": "Ensures municipal actions minimize psychological and emotional harm.",
+      "safeguards": [
+        {
+          "id": "TP-01",
+          "name": "Trauma-Informed Engagement",
+          "requirement": "All interactions must follow trauma-preventive communication standards.",
+          "severity_on_violation": "High"
+        },
+        {
+          "id": "TP-02",
+          "name": "Force Avoidance Mandate",
+          "requirement": "Force may only be used to prevent imminent loss of life.",
+          "severity_on_violation": "Critical"
+        },
+        {
+          "id": "TP-03",
+          "name": "Emotional State Consideration",
+          "requirement": "Municipal actors must consider emotional and psychological state before acting.",
+          "severity_on_violation": "Medium"
+        }
+      ]
+    },
+
+    "vulnerable_population_protections": {
+      "description": "Enhanced safeguards for individuals at higher risk of harm.",
+      "safeguards": [
+        {
+          "id": "VP-01",
+          "name": "Youth Protection Standard",
+          "requirement": "All interactions with minors must follow youth-safe engagement protocols.",
+          "severity_on_violation": "Critical"
+        },
+        {
+          "id": "VP-02",
+          "name": "Disability Accommodation Requirement",
+          "requirement": "Municipal actors must provide reasonable accommodations for disabilities.",
+          "severity_on_violation": "High"
+        },
+        {
+          "id": "VP-03",
+          "name": "Marginalized Group Safeguard",
+          "requirement": "Enhanced protections apply to groups historically harmed by municipal systems.",
+          "severity_on_violation": "High"
+        }
+      ]
+    }
+  },
+
+  "enforcement_actions": {
+    "violations_trigger": [
+      "Telemetry alerts",
+      "Documentation anomalies",
+      "Civilian complaints",
+      "Pattern-of-practice detection"
+    ],
+    "actions": [
+      "Ethics Division review",
+      "Rights-impact assessment",
+      "Corrective action directive",
+      "Escalation to Civic Integrity Division",
+      "Public Accountability documentation sync"
+    ]
+  },
+
+  "kernel_dependencies": {
+    "identity_kernel": "Required for actor verification and authority classification.",
+    "ethics_kernel": "Required for ethical evaluation and rights-impact scoring.",
+    "telemetry_kernel": "Required for pattern detection and risk analysis."
+  },
+
+  "dao_anchoring": {
+    "anchored": true,
+    "wallet": "0cad6a0d-1462-47eb-853e-17521d57322e",
+    "federal_case_reference": "2:25-cv-00484-JPH-MJD"
+  }
+}

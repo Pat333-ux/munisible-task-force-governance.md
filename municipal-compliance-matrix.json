@@ -1,0 +1,141 @@
+{
+  "module": "Munisible Task Force — Compliance Architecture",
+  "version": "3.0",
+  "type": "Municipal Compliance Matrix",
+  "file": "municipal-compliance-matrix.json",
+
+  "purpose": "Define cross-division compliance requirements for all municipal domains, mapping standards, documentation, kernels, and oversight pathways.",
+
+  "domains": {
+    "governance_and_authority": {
+      "description": "Compliance requirements governing municipal authority, decision-making, and lawful operations.",
+      "requirements": [
+        "Authority verification through Identity Kernel",
+        "Documentation of all decisions in immutable audit trails",
+        "Constitutional alignment review via Ethics Kernel",
+        "Operational transparency through Accountability Division"
+      ],
+      "oversight": "Civic Integrity Division",
+      "linked_files": [
+        "governance-authority-protocols.md",
+        "audit-trail-standard.json",
+        "constitutional-safeguards.json"
+      ]
+    },
+
+    "civil_rights_and_wellbeing": {
+      "description": "Standards ensuring protection of civilian rights, dignity, and wellbeing.",
+      "requirements": [
+        "Rights-impact assessment for all high-risk actions",
+        "Non-coercive engagement protocols",
+        "Trauma-preventive communication standards",
+        "Disproportionate impact monitoring via Telemetry Kernel"
+      ],
+      "oversight": "Ethics, Rights & Constitutional Safeguards Division",
+      "linked_files": [
+        "ethics-rights-safeguards.json",
+        "citizen-rights-charter.md",
+        "ombudsman-procedures.md"
+      ]
+    },
+
+    "documentation_and_records": {
+      "description": "Compliance requirements for municipal documentation, audit trails, and public transparency.",
+      "requirements": [
+        "Immutable, append-only documentation",
+        "Timestamp and hash anchoring",
+        "Chain-of-custody tracking",
+        "Public transparency sync for non-sensitive data"
+      ],
+      "oversight": "Public Accountability & Documentation Division",
+      "linked_files": [
+        "documentation-protocols.md",
+        "audit-trail-standard.json",
+        "public-accountability-division.md"
+      ]
+    },
+
+    "telemetry_and_intelligence": {
+      "description": "Standards for telemetry-driven pattern detection, risk scoring, and anomaly identification.",
+      "requirements": [
+        "Real-time anomaly detection",
+        "Pattern-of-practice analysis",
+        "Corruption signature detection",
+        "Rights-impact telemetry alerts"
+      ],
+      "oversight": "Telemetry & Pattern Analysis Division",
+      "linked_files": [
+        "telemetry-ruleset.json",
+        "pattern-detection-engine.md",
+        "telemetry-pattern-analysis-division.md"
+      ]
+    },
+
+    "municipal_operations": {
+      "description": "Compliance requirements for infrastructure, logistics, and operational continuity.",
+      "requirements": [
+        "Continuity-of-operations planning",
+        "Equitable resource allocation",
+        "Infrastructure risk monitoring",
+        "Non-punitive emergency logistics"
+      ],
+      "oversight": "Municipal Operations Support Division",
+      "linked_files": [
+        "infrastructure-support-protocols.json",
+        "emergency-logistics-guide.md",
+        "municipal-systems-continuity-plan.md"
+      ]
+    },
+
+    "public_safety_and_community_support": {
+      "description": "Standards for non-punitive, trauma-informed community safety operations.",
+      "requirements": [
+        "De-escalation-first engagement",
+        "Force-as-last-resort doctrine",
+        "Civilian wellbeing prioritization",
+        "Telemetry-based risk assessment"
+      ],
+      "oversight": "Community Safety Division",
+      "linked_files": [
+        "community-safety-protocols.md",
+        "trauma-informed-engagement.md",
+        "civilian-protection-framework.json"
+      ]
+    },
+
+    "citizen_advocacy_and_ombudsman": {
+      "description": "Compliance requirements for civilian complaint handling, advocacy, and rights protection.",
+      "requirements": [
+        "Retaliation monitoring",
+        "Confidential complaint intake",
+        "Neutral investigation standards",
+        "Public transparency reporting"
+      ],
+      "oversight": "Citizen Advocacy & Ombudsman Division",
+      "linked_files": [
+        "civilian-complaint-protocols.json",
+        "ombudsman-procedures.md",
+        "citizen-rights-charter.md"
+      ]
+    }
+  },
+
+  "kernel_dependencies": {
+    "identity_kernel": "Actor verification, authority classification, timestamp authority.",
+    "telemetry_kernel": "Anomaly detection, pattern analysis, risk scoring.",
+    "ethics_kernel": "Rights-impact evaluation, constitutional safeguards, harm prevention."
+  },
+
+  "compliance_escalation_paths": {
+    "critical": "Immediate escalation to Ethics Division and Civic Integrity Division.",
+    "high": "Review by Telemetry Division and Accountability Division.",
+    "medium": "Corrective action directive issued to responsible municipal department.",
+    "low": "Documentation update and monitoring."
+  },
+
+  "dao_anchoring": {
+    "anchored": true,
+    "wallet": "0cad6a0d-1462-47eb-853e-17521d57322e",
+    "federal_case_reference": "2:25-cv-00484-JPH-MJD"
+  }
+}

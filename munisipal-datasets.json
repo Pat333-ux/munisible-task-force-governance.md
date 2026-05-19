@@ -1,0 +1,145 @@
+{
+  "module": "Municipal Data Architecture",
+  "version": "3.0",
+  "type": "Municipal Dataset Registry",
+  "file": "munisipal-datasets.json",
+
+  "purpose": "Define the authoritative dataset inventory for all municipal systems, including schema categories, telemetry footprints, rights-impact classifications, and governance ownership.",
+
+  "datasets": {
+    "civilian_datasets": {
+      "description": "Datasets containing information about civilians, interactions, rights-impact events, and wellbeing indicators.",
+      "datasets": [
+        {
+          "id": "CIV-01",
+          "name": "Civilian Interaction Log",
+          "fields": ["civilian_id", "actor_id", "interaction_type", "timestamp", "location", "notes"],
+          "rights_classification": "high",
+          "telemetry_indicators": ["dignity_flag", "stress_indicator", "retaliation_signal"],
+          "linked_protocols": [
+            "civilian-protection-protocals.md",
+            "ombudsman-procedures.md"
+          ]
+        },
+        {
+          "id": "CIV-02",
+          "name": "Civilian Complaint Dataset",
+          "fields": ["complaint_id", "civilian_id", "category", "severity", "status", "assigned_investigator"],
+          "rights_classification": "critical",
+          "telemetry_indicators": ["retaliation_signal", "disparate_impact_score"],
+          "linked_protocols": [
+            "civilian-complaint-protocols.json",
+            "citizen-advocacy-ombudsman-division.md"
+          ]
+        },
+        {
+          "id": "CIV-03",
+          "name": "Vulnerability Index Dataset",
+          "fields": ["civilian_id", "vulnerability_index", "risk_factors", "support_needs"],
+          "rights_classification": "high",
+          "telemetry_indicators": ["vulnerability_index", "safety_risk"],
+          "linked_protocols": [
+            "rights-protection-standards.md",
+            "civilian-protection-protocals.md"
+          ]
+        }
+      ]
+    },
+
+    "governance_datasets": {
+      "description": "Datasets governing authority, documentation, audit trails, and governance alignment.",
+      "datasets": [
+        {
+          "id": "GOV-01",
+          "name": "Audit Trail Ledger",
+          "fields": ["entry_id", "actor_id", "action", "timestamp", "hash", "previous_hash"],
+          "rights_classification": "medium",
+          "telemetry_indicators": ["hash_mismatch", "missing_entries"],
+          "linked_protocols": [
+            "audit-trail-standard.json",
+            "governance-alignment-checklist.md"
+          ]
+        },
+        {
+          "id": "GOV-02",
+          "name": "Authority Verification Dataset",
+          "fields": ["actor_id", "role", "authority_level", "permissions", "verification_timestamp"],
+          "rights_classification": "medium",
+          "telemetry_indicators": ["corruption_signature", "deviation_score"],
+          "linked_protocols": [
+            "governance-authority-protocols.md",
+            "identity-kernel-spec.md"
+          ]
+        }
+      ]
+    },
+
+    "operations_datasets": {
+      "description": "Datasets supporting municipal operations, infrastructure, logistics, and continuity.",
+      "datasets": [
+        {
+          "id": "OPS-01",
+          "name": "Infrastructure Telemetry Dataset",
+          "fields": ["system_id", "system_load", "failure_risk", "continuity_score", "latency"],
+          "rights_classification": "low",
+          "telemetry_indicators": ["system_load", "failure_risk", "continuity_score"],
+          "linked_protocols": [
+            "municipal-response-protocals.md",
+            "municipal-systems-continuity-plan.md"
+          ]
+        },
+        {
+          "id": "OPS-02",
+          "name": "Service Disruption Dataset",
+          "fields": ["incident_id", "service_type", "severity", "timestamp", "resolution_status"],
+          "rights_classification": "low",
+          "telemetry_indicators": ["system_load", "failure_risk"],
+          "linked_protocols": [
+            "infrastructure-support-protocols.json",
+            "logistics-support-handbook.md"
+          ]
+        }
+      ]
+    },
+
+    "telemetry_datasets": {
+      "description": "Datasets powering anomaly detection, pattern analysis, and risk scoring.",
+      "datasets": [
+        {
+          "id": "TEL-01",
+          "name": "Anomaly Detection Stream",
+          "fields": ["metric", "value", "baseline", "deviation_score", "timestamp"],
+          "rights_classification": "low",
+          "telemetry_indicators": ["deviation_score", "corruption_signature"],
+          "linked_protocols": [
+            "telemetry-engine-core.json",
+            "pattern-signature-library.json"
+          ]
+        },
+        {
+          "id": "TEL-02",
+          "name": "Rights-Impact Telemetry Stream",
+          "fields": ["civilian_id", "rights_impact", "retaliation_signal", "disparate_impact_score", "timestamp"],
+          "rights_classification": "critical",
+          "telemetry_indicators": ["rights_impact", "retaliation_signal", "disparate_impact_score"],
+          "linked_protocols": [
+            "rights-protection-standards.md",
+            "civilian-protection-protocals.md"
+          ]
+        }
+      ]
+    }
+  },
+
+  "kernel_dependencies": {
+    "identity_kernel": "Required for actor verification and dataset access control.",
+    "ethics_kernel": "Required for rights-impact classification and constitutional safeguards.",
+    "telemetry_kernel": "Required for anomaly detection, pattern analysis, and risk scoring."
+  },
+
+  "dao_anchoring": {
+    "anchored": true,
+    "wallet": "0cad6a0d-1462-47eb-853e-17521d57322e",
+    "federal_case_reference": "2:25-cv-00484-JPH-MJD"
+  }
+}

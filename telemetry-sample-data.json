@@ -1,0 +1,114 @@
+{
+  "module": "Telemetry & Pattern Analysis Division",
+  "version": "3.0",
+  "type": "Synthetic Telemetry Sample Dataset",
+  "file": "telemetry-sample-data.json",
+
+  "purpose": "Provide synthetic sample telemetry entries for testing anomaly detection, rights-impact scoring, and pattern analysis within Beast System 3.0.",
+
+  "sample_entries": [
+    {
+      "entry_id": "TSD-001",
+      "timestamp": "2026-05-19T12:00:00Z",
+      "actor_id": "A-1029",
+      "system_load": 0.42,
+      "failure_risk": 0.18,
+      "continuity_score": 0.91,
+      "deviation_score": 0.05,
+      "rights_impact": 0.00,
+      "retaliation_signal": 0.00,
+      "disparate_impact_score": 0.02,
+      "notes": "Normal operational cycle."
+    },
+    {
+      "entry_id": "TSD-002",
+      "timestamp": "2026-05-19T12:05:00Z",
+      "actor_id": "A-2044",
+      "system_load": 0.87,
+      "failure_risk": 0.63,
+      "continuity_score": 0.52,
+      "deviation_score": 0.22,
+      "rights_impact": 0.00,
+      "retaliation_signal": 0.00,
+      "disparate_impact_score": 0.04,
+      "notes": "Load spike detected; MOSD review recommended."
+    },
+    {
+      "entry_id": "TSD-003",
+      "timestamp": "2026-05-19T12:10:00Z",
+      "actor_id": "A-5561",
+      "system_load": 0.33,
+      "failure_risk": 0.12,
+      "continuity_score": 0.95,
+      "deviation_score": 0.41,
+      "rights_impact": 0.00,
+      "retaliation_signal": 0.00,
+      "disparate_impact_score": 0.00,
+      "notes": "Behavioral deviation spike; Civic Integrity review triggered."
+    },
+    {
+      "entry_id": "TSD-004",
+      "timestamp": "2026-05-19T12:15:00Z",
+      "actor_id": "A-7782",
+      "system_load": 0.48,
+      "failure_risk": 0.21,
+      "continuity_score": 0.89,
+      "deviation_score": 0.07,
+      "rights_impact": 0.61,
+      "retaliation_signal": 0.00,
+      "disparate_impact_score": 0.00,
+      "notes": "Rights-impact threshold exceeded; Ethics HALT triggered."
+    },
+    {
+      "entry_id": "TSD-005",
+      "timestamp": "2026-05-19T12:20:00Z",
+      "actor_id": "A-3341",
+      "system_load": 0.29,
+      "failure_risk": 0.09,
+      "continuity_score": 0.97,
+      "deviation_score": 0.03,
+      "rights_impact": 0.00,
+      "retaliation_signal": 0.72,
+      "disparate_impact_score": 0.00,
+      "notes": "Retaliation signal detected; Ombudsman + Ethics notified."
+    },
+    {
+      "entry_id": "TSD-006",
+      "timestamp": "2026-05-19T12:25:00Z",
+      "actor_id": "A-9012",
+      "system_load": 0.51,
+      "failure_risk": 0.27,
+      "continuity_score": 0.84,
+      "deviation_score": 0.12,
+      "rights_impact": 0.00,
+      "retaliation_signal": 0.00,
+      "disparate_impact_score": 0.56,
+      "notes": "Disparate impact pattern detected; Ethics review required."
+    },
+    {
+      "entry_id": "TSD-007",
+      "timestamp": "2026-05-19T12:30:00Z",
+      "actor_id": "A-1120",
+      "system_load": 0.94,
+      "failure_risk": 0.88,
+      "continuity_score": 0.41,
+      "deviation_score": 0.19,
+      "rights_impact": 0.00,
+      "retaliation_signal": 0.00,
+      "disparate_impact_score": 0.00,
+      "notes": "Critical infrastructure risk; MOSD emergency response triggered."
+    }
+  ],
+
+  "kernel_dependencies": {
+    "identity_kernel": "Required for actor verification and dataset access control.",
+    "ethics_kernel": "Required for rights-impact evaluation and constitutional safeguards.",
+    "telemetry_kernel": "Required for anomaly detection, pattern analysis, and risk scoring."
+  },
+
+  "dao_anchoring": {
+    "anchored": true,
+    "wallet": "0cad6a0d-1462-47eb-853e-17521d57322e",
+    "federal_case_reference": "2:25-cv-00484-JPH-MJD"
+  }
+}

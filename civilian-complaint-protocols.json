@@ -1,0 +1,152 @@
+{
+  "module": "Citizen Advocacy & Ombudsman Division",
+  "version": "3.0",
+  "type": "Civilian Complaint Protocol Set",
+  "file": "civilian-complaint-protocols.json",
+  "division_id": "division_citizen_advocacy",
+
+  "purpose": "Define mandatory, rights-centered, non-retaliatory protocols for receiving, processing, investigating, and resolving civilian complaints within the Munisible Task Force.",
+
+  "protocol_categories": {
+    "intake_channels": {
+      "description": "Approved channels civilians may use to file complaints safely and confidentially.",
+      "channels": [
+        {
+          "id": "IC-01",
+          "name": "Digital Submission Portal",
+          "requirements": [
+            "Anonymous option available",
+            "Encrypted transmission",
+            "Immediate timestamp anchoring"
+          ]
+        },
+        {
+          "id": "IC-02",
+          "name": "In-Person Ombudsman Office",
+          "requirements": [
+            "Trauma-informed staff",
+            "Private meeting rooms",
+            "Accessibility accommodations"
+          ]
+        },
+        {
+          "id": "IC-03",
+          "name": "Community Drop-Box System",
+          "requirements": [
+            "Anonymous physical submission",
+            "Tamper-proof containers",
+            "Daily retrieval with chain-of-custody logging"
+          ]
+        }
+      ]
+    },
+
+    "intake_processing": {
+      "description": "Protocols governing how complaints are received, validated, and logged.",
+      "protocols": [
+        {
+          "id": "IP-01",
+          "name": "Immediate Audit Trail Entry",
+          "action": "All complaints must be logged with timestamp, channel, and hash anchoring.",
+          "requires": ["identity_kernel"]
+        },
+        {
+          "id": "IP-02",
+          "name": "Retaliation Shield Activation",
+          "action": "Automatically activate retaliation monitoring for all involved civilians.",
+          "requires": ["telemetry_kernel", "ethics_kernel"]
+        },
+        {
+          "id": "IP-03",
+          "name": "Accessibility Verification",
+          "action": "Ensure the complaint is readable, complete, and accessible for review.",
+          "requires": ["identity_kernel"]
+        }
+      ]
+    },
+
+    "investigation_protocols": {
+      "description": "Standards for neutral, rights-centered investigation of civilian complaints.",
+      "protocols": [
+        {
+          "id": "INV-01",
+          "name": "Neutral Investigator Assignment",
+          "action": "Assign an investigator with no conflict of interest or prior involvement.",
+          "requires": ["identity_kernel"]
+        },
+        {
+          "id": "INV-02",
+          "name": "Evidence Integrity Review",
+          "action": "Review documentation, telemetry, and audit trails for anomalies.",
+          "requires": ["telemetry_kernel"]
+        },
+        {
+          "id": "INV-03",
+          "name": "Civilian Safety Check",
+          "action": "Assess whether the complainant requires additional protections or accommodations.",
+          "requires": ["ethics_kernel"]
+        }
+      ]
+    },
+
+    "resolution_standards": {
+      "description": "Requirements for resolving complaints ethically, transparently, and non-punitively.",
+      "protocols": [
+        {
+          "id": "RS-01",
+          "name": "Transparent Findings Report",
+          "action": "Produce a clear, accessible summary of findings for the civilian.",
+          "requires": ["identity_kernel"]
+        },
+        {
+          "id": "RS-02",
+          "name": "Corrective Action Directive",
+          "action": "Issue corrective actions when misconduct or harm is confirmed.",
+          "requires": ["ethics_kernel"]
+        },
+        {
+          "id": "RS-03",
+          "name": "Public Accountability Sync",
+          "action": "Publish non-sensitive resolution data to public dashboards.",
+          "requires": ["identity_kernel"]
+        }
+      ]
+    },
+
+    "retaliation_prevention": {
+      "description": "Protocols ensuring civilians are protected from retaliation after filing complaints.",
+      "protocols": [
+        {
+          "id": "RP-01",
+          "name": "Continuous Telemetry Monitoring",
+          "action": "Monitor for retaliation indicators across municipal systems.",
+          "requires": ["telemetry_kernel"]
+        },
+        {
+          "id": "RP-02",
+          "name": "Automatic Ethics Review Trigger",
+          "action": "Any retaliation signal triggers immediate Ethics Division review.",
+          "requires": ["ethics_kernel"]
+        },
+        {
+          "id": "RP-03",
+          "name": "Civilian Safety Outreach",
+          "action": "Contact the civilian to ensure safety and provide support resources.",
+          "requires": ["identity_kernel"]
+        }
+      ]
+    }
+  },
+
+  "kernel_dependencies": {
+    "identity_kernel": "Required for actor verification, authority classification, and documentation anchoring.",
+    "telemetry_kernel": "Required for retaliation detection, pattern-of-practice analysis, and risk scoring.",
+    "ethics_kernel": "Required for rights-impact evaluation and non-punitive investigation logic."
+  },
+
+  "dao_anchoring": {
+    "anchored": true,
+    "wallet": "0cad6a0d-1462-47eb-853e-17521d57322e",
+    "federal_case_reference": "2:25-cv-00484-JPH-MJD"
+  }
+}
